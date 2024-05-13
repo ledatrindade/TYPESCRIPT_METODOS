@@ -59,3 +59,14 @@ const Menornota = alunas.sort((b, a) => {
 
 console.log("\n\na aluna com menor média foi: " + Menornota);
 
+//questão 7
+
+const turmaMedia = alunas.reduce((total, aluna) => {
+    const notas = (aluna.prova.p1 + aluna.prova.p2 + aluna.prova.p3) / 3;
+    return (total + notas);
+}, 0);
+
+const numeroAlunas = alunas.length; // pega a quantidade de alunas que tem
+const mediaTurma = turmaMedia / numeroAlunas; 
+
+console.log("\n\na média da turma é: " + mediaTurma.toFixed(1));
