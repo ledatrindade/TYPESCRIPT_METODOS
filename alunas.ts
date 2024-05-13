@@ -31,3 +31,10 @@ const reprovadas = alunas.filter(a => {
     return media >= 7;
 }).map(a => a.nome);
 console.log("\n\nas alunas reprovadas são: " + reprovadas.join(', '));
+
+// questão 4
+const resultado = alunas.map(a => {
+    const media = parseFloat(((a.prova.p1 + a.prova.p2 + a.prova.p3) / 3).toFixed(1));
+    const aprovada = media >= 7;
+    return { nome: a.nome, media, aprovada };
+});
