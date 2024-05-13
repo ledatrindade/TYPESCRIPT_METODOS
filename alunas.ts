@@ -38,3 +38,14 @@ const resultado = alunas.map(a => {
     const aprovada = media >= 7;
     return { nome: a.nome, media, aprovada };
 });
+
+console.log(resultado);
+
+//questão 5
+const Maiornota = alunas.sort((a, b) => {
+    const mediaA = (a.prova.p1 + a.prova.p2 + a.prova.p3) / 3;
+    const mediaB = (b.prova.p1 + b.prova.p2 + b.prova.p3) / 3;
+    return mediaB - mediaA; // ordem decrescente
+})[0].nome;
+
+console.log("\n\na aluna com maior média foi: " + Maiornota);
