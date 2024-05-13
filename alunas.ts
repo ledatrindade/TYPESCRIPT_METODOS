@@ -49,3 +49,13 @@ const Maiornota = alunas.sort((a, b) => {
 })[0].nome;
 
 console.log("\n\na aluna com maior média foi: " + Maiornota);
+
+//questão 6
+const Menornota = alunas.sort((b, a) => {
+    const mediaA = (a.prova.p1 + a.prova.p2 + a.prova.p3) / 3;
+    const mediaB = (b.prova.p1 + b.prova.p2 + b.prova.p3) / 3;
+    return mediaB - mediaA; // ordem crescente
+})[0].nome;
+
+console.log("\n\na aluna com menor média foi: " + Menornota);
+
