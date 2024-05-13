@@ -16,3 +16,11 @@ const alunas = [
 //questão 1
 const media = alunas.map(a => ((a.prova.p1 + a.prova.p2 + a.prova.p3) / 3).toFixed(1));
 console.log("as médias das alunas são: " + media.join(', '));
+
+
+//questão 2
+const aprovadas = alunas.filter(a => {
+    const media = (a.prova.p1 + a.prova.p2 + a.prova.p3) / 3;
+    return media >= 7;
+}).map(a => a.nome);
+console.log("\n\nas alunas aprovadas são: " + aprovadas.join(', '));
