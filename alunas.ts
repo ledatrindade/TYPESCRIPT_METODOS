@@ -13,3 +13,6 @@ const alunas = [
     { nome: "Jane Kelly", prova: { p1: 7, p2: 5.5, p3: 9.1 } },// 7
 ]
 
+//questão 1
+const media = alunas.map(a => ((a.prova.p1 + a.prova.p2 + a.prova.p3) / 3).toFixed(1));
+console.log("as médias das alunas são: " + media.join(', '));
