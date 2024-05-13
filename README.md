@@ -11,7 +11,7 @@ Este repositório contém uma série de resoluções de exercícios que visam a 
 
 Além disso, este repositório utiliza Node.js para execução dos scripts em TypeScript e Git para controle de versão e colaboração.
 
-## Autora 🚀
+## Autora 👩‍💻
 
 - **Nome**: Lêda Trindade
 - **Data de Conclusão**: 13/05/2024
