@@ -24,3 +24,10 @@ const aprovadas = alunas.filter(a => {
     return media >= 7;
 }).map(a => a.nome);
 console.log("\n\nas alunas aprovadas são: " + aprovadas.join(', '));
+
+//questão 3
+const reprovadas = alunas.filter(a => {
+    const media = (a.prova.p1 + a.prova.p2 + a.prova.p3) / 3;
+    return media >= 7;
+}).map(a => a.nome);
+console.log("\n\nas alunas reprovadas são: " + reprovadas.join(', '));
